@@ -89,11 +89,7 @@ const resolvers = {
                 console.error('Error fetching answer from OpenAI:', error);
                 throw new Error('Failed to fetch response from OpenAI API');
             }
-        },
-        getAnswer: async (_, { question }) => {
-
         }
-
     }
 };
 
