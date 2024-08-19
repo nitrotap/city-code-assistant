@@ -1,0 +1,137 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    width: 100vw;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+.description {
+    padding: 20px;
+    background-color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+.description p {
+    line-height: 1.6;
+}
+
+.starter-questions {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.starter-questions h3 {
+    margin-bottom: 10px;
+}
+
+.starter-questions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.starter-questions li {
+    padding: 10px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.starter-questions li:hover {
+    background-color: #d4d4d4;
+}
+
+.chat-interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.messages-area {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #d1e7ff;
+    color: #333;
+    border-bottom-right-radius: 0;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: #e1ffe1;
+    color: #333;
+    border-bottom-left-radius: 0;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-area button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-area button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #ffe6e6;
+}
