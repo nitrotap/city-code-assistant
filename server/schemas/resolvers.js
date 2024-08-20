@@ -77,7 +77,7 @@ const resolvers = {
                     );
                     for (const message of messages.data.reverse()) {
                         console.log(`${message.role} > ${message.content[0].text.value}`);
-                        res += message.content[0].text.value
+                        res += message.content[0].text.value + '  \n'
                     }
                 } else {
                     console.log(run.status);
